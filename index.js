@@ -36,14 +36,8 @@ const { swaggerUi, specs } = require("./swagger/swagger");
 
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(specs, swaggerOptions));
 
-/**
- * @path {GET} http://localhost:3003/
- * @description 요청 데이터 값이 없고 반환 값이 있는 GET Method
- */
-app.get("/", (req, res) => {
-  //Hello World 데이터 반환
-  res.send("Hello World");
-});
-
 // http listen port 생성 서버 실행
-app.listen(3003, () => console.log("useB. Swagger API doc :)"));
+app.listen(3003, () => {
+  console.log("useB. Swagger API doc :)");
+  console.log("Swagger UI is available at: http://localhost:3003/api-docs/#/");
+});
