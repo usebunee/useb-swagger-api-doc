@@ -4,7 +4,7 @@
   "description": "Swagger API useB project",
   "main": "Swagger-UI/index.js",
   "scripts": {
-    "start": "node ./index.js",
+    "start": "node ./index.js &",
     "dev": "npx nodemon ./index.js",
     "build": "swagger-autogen ./swagger-output.json ./Swagger-UI/index.js"
   },

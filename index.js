@@ -37,7 +37,7 @@ const { swaggerUi, specs } = require("./swagger/swagger");
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(specs, swaggerOptions));
 
 // http listen port 생성 서버 실행
-app.listen(3003, () => {
+app.listen(3000, () => {
   console.log("useB. Swagger API doc :)");
-  console.log("Swagger UI is available at: http://localhost:3003/api-docs/#/");
+  console.log("Swagger UI is available at: http://localhost:3000/api-docs/#/");
 });
